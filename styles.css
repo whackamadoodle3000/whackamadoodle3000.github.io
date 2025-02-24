@@ -1,0 +1,215 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section::after {
+    content: '';
+    flex-grow: 999999999;
+  }
+  .imagediv {
+    margin: 20px;
+    background-color: rgb(24, 24, 24);
+    position: relative;
+  }
+  i{
+    display: block;
+  }
+  .photo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  .centerphotos {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    color: #00aaff; /* Bright blue */
+    text-decoration: none; /* Optional: removes underline */
+}
+
+a:hover {
+    color: #33ccff; /* Even brighter blue on hover */
+    text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+
+.marginup {
+  margin-top: 100px;
+}
+
+.moremarginup{
+  margin-top: 30vh;
+}
+
+.margindown{
+  margin-bottom: 20px;
+}
+
+.iconcontainer {
+  text-align: center;
+}
+
+.icons {
+  margin-left: auto;
+  margin-right: auto;
+  max-width:      700px;
+}
+
+
+
+.iconimg {
+  -webkit-filter: invert(.4);
+  filter: invert(.4);
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.mobile{
+  display: none;
+  height: 100vh;
+}
+.laptop{
+  display: auto;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 770px) {
+  .scale {
+    zoom: 0.6;
+    -moz-transform: scale(0.6);
+  
+  }
+  .scale2 {
+    zoom: 0.3;
+    -moz-transform: scale(0.3);
+
+  }
+  .moremarginup{
+    margin-top: 19vh;
+  }
+
+  #home, #about, #photography, #projects {
+    padding-top: 13px;
+    padding-bottom: 10px;
+  }
+  .marginup {
+    margin-top: 50px;
+  }
+  .moremarginup{
+    margin-top: 14vh;
+  }
+  .icons {
+    margin-left: auto;
+    margin-right: auto;
+    max-width:      60vw;
+  }
+}
+
+
+@media only screen and (max-height: 1400px) and (min-width: 770px) {
+  .marginup {
+    margin-top: 80px;
+  }
+  
+  .moremarginup{
+    margin-top: 19vh;
+  }
+  .scale {
+    zoom: 0.7;
+    -moz-transform: scale(0.7);
+  
+  }
+  .scale2 {
+    zoom: 0.6;
+    -moz-transform: scale(0.6);
+
+
+  }
+  .mobile{
+    display: none;
+    height: 100vh;
+    
+  }
+  .laptop{
+    display: block;
+    height: 100vh;
+  }
+
+  .icons {
+    margin-left: auto;
+    margin-right: auto;
+    max-width:      700px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-lg-3 {
+    flex: 0 0 25%; /* This ensures 4 columns on desktop */
+    max-width: 25%;
+  }
+
+}
+
+@media only screen and (min-width: 770px) {
+  .marginup {
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: 65px; /* Adjust top margin as needed */
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-lg-3 {
+    flex: 0 0 25%; /* This ensures 4 columns on desktop */
+    max-width: 25%;
+  }
+
+}
+
+.description {
+    box-sizing: border-box;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+
+}
+
+#home, #about, #photography, #projects {
+  padding-top: 23px;
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+.col-6{display:flex}
+
+
+
+
+
+
+
+
+.card-image {
+  background-size: contain; /* Ensure that the image covers the entire container */
+
+}
+
+.highlight-text {
+
+  color: black; /* Text color */
+
+}
+
